@@ -1,0 +1,124 @@
+---
+---
+
+<title>Totally Not About Phishing</title>
+<meta
+  name="description"
+  content="A playful, educational site about recognizing phishing attempts—without collecting data or asking for credentials."
+/>
+<link rel="stylesheet" href="/assets/style.css" />
+
+<header>
+  <h1>Totally Not About Phishing</h1>
+  <p class="subtitle">A friendly guide to spotting scams and staying safe online</p>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>What this site is (and isn’t)</h2>
+      <p>
+        This site is a lighthearted, educational resource that explains common signs of phishing
+        messages and how to avoid them. It is not a data collection site. We never ask for
+        passwords, credit card numbers, or any personal information.
+      </p>
+      <ul class="badges">
+        <li class="badge">No data collection</li>
+        <li class="badge">Educational only</li>
+        <li class="badge">Privacy-first</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="content">
+    <h2>Phishing red flags to watch for</h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Urgency and pressure</h3>
+        <p>“Act now or your account will be closed!” Scammers push you to skip careful thinking.</p>
+      </article>
+
+      <article class="card">
+        <h3>Suspicious links</h3>
+        <p>
+          Hover to preview the URL. If the domain looks off (misspellings or strange subdomains),
+          don’t click.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Unexpected attachments</h3>
+        <p>Unsolicited files can contain malware. Verify the sender before opening anything.</p>
+      </article>
+
+      <article class="card">
+        <h3>Requests for credentials</h3>
+        <p>Legitimate services rarely ask for passwords or 2FA codes via email or chat.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content">
+    <h2>Quick self-check</h2>
+    <div class="checklist">
+      <label><input type="checkbox" /> The sender’s address looks legitimate and matches past communications.</label>
+      <label><input type="checkbox" /> The message contains no spelling mistakes or oddly formal language.</label>
+      <label><input type="checkbox" /> Links look authentic when hovered and point to expected domains.</label>
+      <label><input type="checkbox" /> No one is asking for passwords, payment info, or 2FA codes.</label>
+      <label
+        ><input type="checkbox" /> You can verify via an official channel (e.g., app or phone number on the
+        website).</label
+      >
+    </div>
+  </section>
+
+  <section class="content quiz">
+    <h2>Mini quiz: spot the safe choice</h2>
+    <form id="quiz-form">
+      <fieldset class="quiz-question">
+        <legend>
+          1) You receive an email saying your account will be closed in 1 hour unless you “confirm your password.”
+          What’s the safest next step?
+        </legend>
+        <label><input type="radio" name="q1" value="a" /> Click the link and enter your password right away.</label>
+        <label><input type="radio" name="q1" value="b" /> Ignore the email and permanently delete your account.</label>
+        <label
+          ><input type="radio" name="q1" value="c" /> Open your account app or go to the official website directly to
+          check.</label
+        >
+      </fieldset>
+
+      <fieldset class="quiz-question">
+        <legend>2) A message includes a shortened URL (e.g., bit.ly). What should you do?</legend>
+        <label><input type="radio" name="q2" value="a" /> Click it immediately—it’s probably fine.</label>
+        <label
+          ><input type="radio" name="q2" value="b" /> Use a URL expander or preview, and verify the final destination
+          first.</label
+        >
+        <label><input type="radio" name="q2" value="c" /> Forward the link to friends to ask them to try it.</label>
+      </fieldset>
+
+      <fieldset class="quiz-question">
+        <legend>
+          3) Someone claiming to be “Support” asks for your 2FA code to “verify your identity.” What’s the correct
+          response?
+        </legend>
+        <label><input type="radio" name="q3" value="a" /> Share the code so they can help you faster.</label>
+        <label><input type="radio" name="q3" value="b" /> Ask for a supervisor and share the code with them.</label>
+        <label
+          ><input type="radio" name="q3" value="c" /> Refuse, and contact support via official channels instead.</label
+        >
+      </fieldset>
+
+      <button type="button" id="quiz-submit">Check answers</button>
+      <p id="quiz-result" class="quiz-result" aria-live="polite"></p>
+    </form>
+    <p class="disclaimer">This quiz is client-side only. No answers or personal data are sent or stored.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Totally Not About Phishing</p>
+</footer>
+
+<script src="/assets/script.js"></script>
